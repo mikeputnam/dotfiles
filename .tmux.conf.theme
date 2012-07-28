@@ -1,5 +1,4 @@
 # General
-#set -g prefix `
 set -g prefix C-space
 set -g set-titles on
 setw -g clock-mode-colour yellow
@@ -12,14 +11,10 @@ set -g display-panes-time 5000
 set bell-action any
 
 # Status
-set -g status-left-length 30
-set -g status-left "[ #T ]"
 set -g status-right-length 30
-#set -g status-right "[ %a %m/%d %H:%M/#(date --utc +%%H:%%M) ]"
 set -g status-right "%a %b %e %I:%M %Z %Y"
 
 # Keybinds
-bind m lock-server
 bind r respawn-window
 
 # Colors
