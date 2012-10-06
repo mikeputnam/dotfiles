@@ -1,2 +1,4 @@
 XTerm*loginShell:true
 UXTerm*reverseVideo:true
+UXTerm*scrollBar:false
+UXTerm*maximized:true
