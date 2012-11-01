@@ -1,0 +1,5 @@
+[http]
+    proxy = http://127.0.0.1:3128
+[user]
+    name = Mike Putnam
+    email = mike@theputnams.net
