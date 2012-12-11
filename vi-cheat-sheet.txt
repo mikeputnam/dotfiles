@@ -1,3 +1,10 @@
+
+Diff
+:vert diffsplit file
+diffsplit file1 file2
+do[btain] Copy area under cursor from the other file
+dp[ut]    Put area under cursor to the other file
+
 Quitting 
 :x  Exit, saving changes
 :q  Exit as long as there have been no changes
