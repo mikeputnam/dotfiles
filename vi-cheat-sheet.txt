@@ -1,3 +1,5 @@
+Windows/Cygwin line endings
+:set fileformat=dos
 
 Diff
 :vert diffsplit file
