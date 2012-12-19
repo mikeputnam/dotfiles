@@ -1,0 +1,109 @@
+set postpone="no"
+set abort_unmodified="no"
+set abort_nosubject="no"
+set copy="yes"
+unset confirmappend
+set editor='vim -c "set tw=72" ' 
+
+# Begin GMAIL-IMAP STUFF
+macro index <f11> '<change-folder>imaps://mike@theputnams.net@imap.gmail.com<enter>'
+macro index <f12> '<change-folder>imaps://daemon@dhmn.net@imap.gmail.com<enter>'
+
+folder-hook  'imaps://mike@theputnams.net@imap.gmail.com' 'my_hdr From: Mike Putnam <mike@theputnams.net>'
+account-hook 'imaps://mike@theputnams.net@imap.gmail.com' 'set folder=imaps://mike@theputnams.net@imap.gmail.com/'
+account-hook 'imaps://mike@theputnams.net@imap.gmail.com' 'set smtp_url=smtps://mike@theputnams.net@smtp.gmail.com'
+
+folder-hook 'imaps://daemon@dhmn.net@imap.gmail.com' 'my_hdr From: Daemon <daemon@dhmn.net>'
+account-hook 'imaps://daemon@dhmn.net@imap.gmail.com' 'set folder=imaps://daemon@dhmn.net@imap.gmail.com/'
+account-hook 'imaps://daemon@dhmn.net@imap.gmail.com' 'set smtp_url=smtps://daemon@dhmn.net@smtp.gmail.com'
+
+mailboxes =INBOX =S67 =mkemakerspace
+unset folder
+unset imap_passive
+
+lists dhmn-discussion@googlegroups.com
+
+#set record="~/.mutt/sent"
+unset record
+set postponed="+[Gmail]/Drafts"
+set certificate_file=~/.mutt/muttcertificates
+set delete=yes
+set imap_keepalive=120
+set mail_check = 120
+set timeout = 120
+set indent_string = "> "
+# End GMAIL-IMAP STUFF
+
+#set implicit_autoview
+#auto_view text/html
+
+set beep_new # beep on new mail
+set move="no"
+set sort="threads"
+set include="yes"
+set copy="yes"
+set ascii_chars
+set tilde
+set pgp_autosign="no"
+source ~/.mutt/muttalias
+set alias_file="~/.mutt/muttalias"
+
+bind editor <space> noop
+bind pager g group-reply
+bind index,pager <delete> delete-message
+
+macro index,pager y "<save-message>=[Gmail]/All Mail<enter>" "Archive"
+macro index Y "<tag-prefix><save-message>=[Gmail]/All Mail<enter>" "Archive"
+macro index,pager d "<save-message>=[Gmail]/Trash<enter>" "Trash"
+macro index D "<tag-prefix><save-message>=[Gmail]/Trash<enter>" "Trash"
+
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index go "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to sent Mail"
+macro index gp "<change-folder>=[Gmail]/Spam<enter>" "Go to Spam"
+macro index gt "<change-folder>=[Gmail]/Trash<enter>" "Go to Trash"
+
+toggle reply_to="no"
+toggle move="no"
+toggle quit="yes"
+
+folder-hook . 'set header_cache=~/.mutt/cache'
+folder-hook =imaps://imap.gmail.com:993/SPAM 'set header_cache=""'
+folder-hook ="[Gmail]/Sent Mail" 'set header_cache=""'
+
+ignore *
+unignore Date:
+unignore To: 
+unignore From: 
+unignore CC:
+unignore Subject:
+
+ignore Resent- Precedence In-Reply-To Return-Receipt-To Mailer X400
+ignore Originator X-Loop X-Mailing-List X-Listprocessor X-Face
+ignore X-Received X-Mailer X-Envelope-To X-Sender X-Attribution
+ignore Path Lines NNTP-Posting-Host X-Newsreader X-Submitted-Via
+
+color  hdrdefault      green           black
+color  header          brightyellow    black   "^date:"
+color  header          brightyellow    black   "^to:"
+color  header          brightyellow    black   "^from:"
+color  header          brightyellow    black   "^cc:"
+color  header          brightyellow    black   "^subject:"
+color  quoted          green           black
+color  signature       brightred       black
+color  indicator       brightyellow    red
+color  error           brightred       black
+color  status          brightwhite     blue
+color  tree            brightmagenta   black
+color  tilde           brightmagenta   black
+color  body            brightyellow    black (((ht|f)tps?)|mailto):(//)?[^\ "\t]*|www\.[-a-z0-9.]+)[^\ .,;\t>">]
+color  body            brightmagenta   black "[-a-z_0-9.]+@[-a-z_0-9.]+"
+color  body            brightyellow    black   "^Good signature"
+color  body            brightwhite     red     "^Bad signature from.*"
+# regular tagged messages
+ color index black         red    "~T !~F !~p !~P"
+# # regular flagged messages
+ color index black         cyan     "~F !~p !~P"
+
