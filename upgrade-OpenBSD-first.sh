@@ -19,7 +19,7 @@ elif [[ $UPGRADETYPE = "snp" ]];
     ftp ftp://mirror.planetunix.org/pub/OpenBSD/snapshots/i386/bsd*
     ftp ftp://mirror.planetunix.org/pub/OpenBSD/snapshots/i386/*tgz
 else
-    print "Must run with: UPGRADETYPE=rel or snp ", $0
+    print "Must run with: UPGRADETYPE=rel or snp" $0
     exit 1
 fi
 echo "starting upgrade..."
