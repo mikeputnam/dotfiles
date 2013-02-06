@@ -27,12 +27,12 @@ rm /obsd ; ln /bsd /obsd && cp bsd /nbsd && mv /nbsd /bsd
 cp bsd.rd bsd.mp /
 cp /sbin/reboot /sbin/oreboot
 echo "starting untar..." 
-tar -C / -xzphf xserv52.tgz
-tar -C / -xzphf xfont52.tgz
-tar -C / -xzphf xshare52.tgz
-tar -C / -xzphf xbase52.tgz
-tar -C / -xzphf game52.tgz
-tar -C / -xzphf comp52.tgz
-tar -C / -xzphf man52.tgz
-tar -C / -xzphf base52.tgz # Install last!
+tar -C / -xzphf xserv*.tgz
+tar -C / -xzphf xfont*.tgz
+tar -C / -xzphf xshare*.tgz
+tar -C / -xzphf xbase*.tgz
+tar -C / -xzphf game*.tgz
+tar -C / -xzphf comp*.tgz
+tar -C / -xzphf man*.tgz
+tar -C / -xzphf base*.tgz # Install last!
 echo "run /sbin/oreboot"
