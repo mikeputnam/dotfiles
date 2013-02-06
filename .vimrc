@@ -16,10 +16,10 @@ set shiftwidth=4
 set showcmd
 set softtabstop=4
 set tabstop=4
-set textwidth=80
 syntax on 
 highlight Normal guibg=lightyellow
 filetype plugin on
+map <F5> :set nonumber!<bar>set number?<CR>
 map <F6> :set paste!<bar>set nopaste?<CR>
 map <F7> :w<bar>!echo compiling...;javac %;echo running...;java %:t:r<CR>
 map <Insert> <RightMouse>
