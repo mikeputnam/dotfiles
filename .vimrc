@@ -17,7 +17,7 @@ set showcmd
 set softtabstop=4
 set tabstop=4
 syntax on 
-colorscheme desert
+colorscheme darkblue
 set background=dark
 highlight Normal guibg=lightyellow
 filetype plugin on
