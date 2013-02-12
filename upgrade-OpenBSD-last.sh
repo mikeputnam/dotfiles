@@ -12,7 +12,7 @@ echo "running MAKEDEV..."
 cd /dev
 ./MAKEDEV all
 echo "running sysmerge..."
-sysmerge -s ${RELEASEPATH}/etc52.tgz -x ${RELEASEPATH}/xetc52.tgz
+sysmerge -s ${RELEASEPATH}/etc53.tgz -x ${RELEASEPATH}/xetc53.tgz
 echo "cleaning up..."
 rm /usr/bin/lint
 rm /usr/libexec/lint[12]
