@@ -17,6 +17,8 @@ set showcmd
 set softtabstop=4
 set tabstop=4
 syntax on 
+colorscheme desert
+set background=dark
 highlight Normal guibg=lightyellow
 filetype plugin on
 map <F5> :set nonumber!<bar>set number?<CR>
