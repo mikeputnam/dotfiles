@@ -2,3 +2,6 @@ XTerm*loginShell:true
 UXTerm*reverseVideo:true
 UXTerm*scrollBar:false
 UXTerm*maximized:true
+#Really big text for presenting
+#UXTerm*font:*-courier-medium-r-*-*-25-*-*-*-*-*-*-*
+UXTerm*font:*-courier-medium-r-*-*-18-*-*-*-*-*-*-*
