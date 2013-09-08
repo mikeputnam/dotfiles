@@ -47,7 +47,7 @@ set certificate_file=~/.mutt/muttcertificates
 set copy="yes"
 set copy="yes"
 set delete=yes
-set editor='vim -c "set tw=72" ' 
+set editor='vim' 
 set imap_keepalive=120
 set include="yes"
 set indent_string = "> "
