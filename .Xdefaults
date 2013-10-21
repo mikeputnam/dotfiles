@@ -1,7 +1,7 @@
 XTerm*loginShell:true
 XTerm*reverseVideo:true
 XTerm*scrollBar:false
-XTerm*maximized:true
+#XTerm*maximized:true
 #Really big text for presenting
 #UXTerm*font:*-courier-medium-r-*-*-24-*-*-*-*-*-*-*
 XTerm*font:*-courier-medium-r-*-*-18-*-*-*-*-*-*-*
