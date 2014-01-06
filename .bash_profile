@@ -1,10 +1,18 @@
-alias ls='ls -la'
+if uname | grep 'CYGWIN'; then
+    #cygwin specific
+    echo "Setting cygwin aliases..."
+    alias knife='/cygdrive/c/opscode/chef/embedded/bin/ruby C:/opscode/chef/bin/knife'
+    alias chef-client='/cygdrive/c/opscode/chef/embedded/bin/ruby C:/opscode/chef/bin/chef-client'
+    alias chef-solo='/cygdrive/c/opscode/chef/embedded/bin/ruby C:/opscode/chef/bin/chef-solo'
+    alias shef='/cygdrive/c/opscode/chef/embedded/bin/ruby C:/opscode/chef/bin/shef'
+fi
+
+alias ls='ls -la --color'
 alias sqlt-diff='PERL5LIB=/home/mike/perl5/lib/perl5 ~/perl5/bin/sqlt-diff'
 alias ta='ssh -p 443 mike@dhmn.net'
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
-export PATH=/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-export PS1='[\u@hedley \W]\$ '
+#export PATH=/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 # Start/Reuse SSH Agent - restart or re-use an existing agent
 SSH_AGENT_CACHE=/tmp/ssh_agent_eval_`whoami`
