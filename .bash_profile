@@ -7,6 +7,7 @@ if uname | grep 'CYGWIN'; then
     alias shef='/cygdrive/c/opscode/chef/embedded/bin/ruby C:/opscode/chef/bin/shef'
 fi
 
+alias gs='git status'
 alias ls='ls -la --color'
 alias sqlt-diff='PERL5LIB=/home/mike/perl5/lib/perl5 ~/perl5/bin/sqlt-diff'
 alias ta='ssh -p 443 mike@dhmn.net'
