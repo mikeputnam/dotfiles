@@ -1,13 +1,13 @@
+[color]
+    ui = auto
+:x
+    editor = vim
+    excludesfile = ~/.gitignore
+[diff]
+    tool = vimdiff
+[push]
+    # Push current branch even if you've never pushed it before
+    default = current
 [user]
     name = Mike Putnam
-    email = mike@theputnams.
-[core]
-	editor = vim
-        excludesfile = ~/.gitignore
-
-[color]
-	ui = auto
-
-[push]
-	# Push current branch even if you've never pushed it before
-	default = current
+    email = mike@theputnams.net
