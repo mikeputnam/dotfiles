@@ -5,3 +5,4 @@ XTerm*scrollBar:false
 #Really big text for presenting
 #UXTerm*font:*-courier-medium-r-*-*-24-*-*-*-*-*-*-*
 XTerm*font:*-courier-medium-r-*-*-18-*-*-*-*-*-*-*
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
