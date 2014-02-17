@@ -15,6 +15,7 @@ set -g status-right-length 30
 set -g status-right "%a %b %e %I:%M %Z %Y"
 
 # Keybinds
+bind F5 set synchronize-panes
 bind r respawn-window
 
 # Colors
