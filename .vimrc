@@ -1,5 +1,8 @@
+au BufReadPost *.app set syntax=python
+let g:netrw_liststyle=3
 set autoindent
 set backspace=2
+set clipboard=unnamedplus
 set encoding=utf-8
 set expandtab
 set history=1000
