@@ -2,8 +2,9 @@ source-file ~/.tmux.conf.theme
 
 new-window                  "ssh www2"
 split-window -h -p 25 -t 0  "ssh cron0"
-split-window -h -p 25 -t 0  "ssh www-demo1"
 split-window -h -p 25 -t 0  "ssh staging"
+split-window -h -p 25 -t 0  "ssh www-demo2"
+split-window -h -p 25 -t 0  "ssh www-demo1"
 select-pane -t 0
 
 select-layout even-vertical
