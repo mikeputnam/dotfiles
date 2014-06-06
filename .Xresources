@@ -1,0 +1,10 @@
+XTerm*CharClass: 33:48,35-39:48,42-43:48,45-47:48,58:48,61:48,63-64:48,126:48
+XTerm*Locale: true
+XTerm*LoginShell: true
+XTerm*Maximized: true
+XTerm*ReverseVideo: true
+XTerm*SaveLines: 2000
+XTerm*ScrollBar: false
+XTerm*Utf8: true
+XTerm*Utf8Title: true
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
