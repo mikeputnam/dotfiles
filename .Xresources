@@ -7,7 +7,7 @@ XTerm*locale: true
 XTerm*loginShell: true
 XTerm*maximized: true
 XTerm*pointerMode: 1
-XTerm*reverseVideo: true
+!XTerm*reverseVideo: true
 XTerm*saveLines: 2000
 XTerm*scrollBar: false
 XTerm*termName: xterm
