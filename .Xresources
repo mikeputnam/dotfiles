@@ -1,10 +1,16 @@
-XTerm*CharClass: 33:48,35-39:48,42-43:48,45-47:48,58:48,61:48,63-64:48,126:48
-XTerm*Locale: true
-XTerm*LoginShell: true
-XTerm*Maximized: true
-XTerm*ReverseVideo: true
-XTerm*SaveLines: 2000
-XTerm*ScrollBar: false
-XTerm*Utf8: true
-XTerm*Utf8Title: true
+XTerm*bellIsUrgent: true
+XTerm*charClass: 33:48,35-39:48,42-43:48,45-47:48,58:48,61:48,63-64:48,126:48
+XTerm*faceName: DejaVu Sans Mono
+XTerm*faceSize: 10
+XTerm*geometry: 159x56+0+0
+XTerm*locale: true
+XTerm*loginShell: true
+XTerm*maximized: true
+XTerm*pointerMode: 1
+XTerm*reverseVideo: true
+XTerm*saveLines: 2000
+XTerm*scrollBar: false
+XTerm*termName: xterm
+XTerm*utf8: true
+XTerm*utf8Title: true
 XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
