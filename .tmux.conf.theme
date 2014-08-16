@@ -5,6 +5,7 @@ setw -g clock-mode-colour yellow
 setw -g utf8 on
 setw -g mode-keys vi
 set -g display-panes-time 5000
+set -g history-limit 5000
 
 # Notices
 set bell-action any
@@ -16,6 +17,8 @@ set -g status-right "%a %b %e %I:%M %Z %Y"
 # Keybinds
 bind F5 set synchronize-panes
 bind r respawn-window
+bind m source-file ~/.tmux-main
+bind space send-prefix
 
 # Colors
 set -g status-bg black
