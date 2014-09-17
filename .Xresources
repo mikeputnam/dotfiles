@@ -5,7 +5,8 @@ XTerm*faceSize: 10
 XTerm*locale: true
 XTerm*loginShell: true
 XTerm*maximized: true
-XTerm*reverseVideo: true
+XTerm*metaSendsEscape: true
+!XTerm*reverseVideo: true
 XTerm*saveLines: 2000
 XTerm*scrollBar: false
 XTerm*termName: xterm
