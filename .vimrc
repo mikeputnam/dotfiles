@@ -30,5 +30,7 @@ highlight Normal guibg=lightyellow
 filetype plugin on
 map <F5> :set nonumber!<bar>set number?<CR>
 map <F6> :set paste!<bar>set nopaste?<CR>
-map <F7> :w<bar>!echo compiling...;javac %;echo running...;java %:t:r<CR>
+"write-make-run This evaluates to the basename of the current file --> %:t:r
+map <F7> <Esc>:w<bar>!echo compiling...;make clean;make;echo running...;./%:t:r<CR>
+imap <F7> <Esc>:w<bar>!echo compiling...;make clean;make;echo running...;./%:t:r<CR>
 map <Insert> <RightMouse>
