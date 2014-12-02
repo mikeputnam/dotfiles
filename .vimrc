@@ -10,7 +10,7 @@ set history=1000
 set hlsearch
 set ignorecase
 set incsearch
-set laststatus=2 
+set laststatus=2
 set nocompatible
 set nowrap
 set number
@@ -20,7 +20,7 @@ set shiftwidth=4
 set showcmd
 set softtabstop=4
 set tabstop=4
-syntax on 
+syntax on
 colorscheme darkblue
 set background=dark
 highlight DiffAdd cterm=none ctermfg=bg ctermbg=Green gui=none guifg=bg guibg=Green
@@ -39,3 +39,5 @@ map <Insert> <RightMouse>
 match ErrorMsg '\s\+$'
 "bind \-rtw to remove trailing whitespace
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
