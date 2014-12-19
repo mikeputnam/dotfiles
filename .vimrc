@@ -1,4 +1,5 @@
-au BufReadPost *.app set syntax=python
+autocmd BufReadPost *.app set syntax=python
+autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
 let g:netrw_liststyle=3
 set autoindent
 set backspace=2
@@ -14,6 +15,7 @@ set laststatus=2
 set nocompatible
 set nowrap
 set number
+set relativenumber
 set ruler
 set showmatch
 set shiftwidth=4
@@ -29,6 +31,7 @@ highlight DiffChange cterm=none ctermfg=bg ctermbg=Yellow gui=none guifg=bg guib
 highlight DiffText cterm=none ctermfg=bg ctermbg=Magenta gui=none guifg=bg guibg=Magenta
 highlight Normal guibg=lightyellow
 filetype plugin on
+map <F4> :set norelativenumber!<bar>set relativenumber?<CR>
 map <F5> :set nonumber!<bar>set number?<CR>
 map <F6> :set paste!<bar>set nopaste?<CR>
 "write-make-run This evaluates to the basename of the current file --> %:t:r
