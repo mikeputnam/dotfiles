@@ -3,5 +3,8 @@ split-window -h -t 0  "ssh www1"
 split-window -h -t 0  "ssh www2"
 split-window -h -t 0  "ssh www3"
 split-window -h -t 0  "ssh www4"
-select-layout tiled
+select-layout main-horizontal
+split-window -h -t 0  "ssh cron0"
+split-window -h -t 0  "ssh file0"
 select-pane -t 0
+select-layout tiled

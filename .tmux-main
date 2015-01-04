@@ -1,9 +1,0 @@
-source-file ~/.tmux.conf.theme
-
-rename-session -t 0 main
-rename-window -t 0 vagrant
-send-keys -t 0 'cd ~/src/ssm-alpha && vagrant up default && vagrant ssh default' C-m
-new-window -n repo -c ~/src/ssm-alpha
-new-window -n bash
-source-file ~/.tmux-servers
-select-window -t 0

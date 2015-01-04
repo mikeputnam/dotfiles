@@ -14,7 +14,6 @@ set incsearch
 set laststatus=2
 set nocompatible
 set nowrap
-set number
 set relativenumber
 set ruler
 set showmatch
