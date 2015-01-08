@@ -1,6 +1,14 @@
-autocmd BufReadPost *.app set syntax=python
-autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
+" define a group 'vimrc' and initialize.
+augroup vimrc
+    autocmd!
+augroup END
+
+autocmd vimrc BufReadPost *.app set syntax=python
+autocmd vimrc BufReadPost *.ts set syntax=javascript
+autocmd vimrc Filetype yaml setlocal ts=2 sts=2 sw=2
+
 let g:netrw_liststyle=3
+let g:neocomplete#enable_at_startup = 1
 set autoindent
 set backspace=2
 set clipboard=unnamedplus
