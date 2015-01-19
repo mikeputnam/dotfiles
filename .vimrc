@@ -45,6 +45,9 @@ map <F6> :set paste!<bar>set nopaste?<CR>
 map <F7> <Esc>:w<bar>!clear;echo compiling...;make clean;make;echo running...;./%:t:r<CR>
 imap <F7> <Esc>:w<bar>!clear;echo compiling...;make clean;make;echo running...;./%:t:r<CR>
 map <Insert> <RightMouse>
+imap kj <Esc>
+map kjkj <Esc>:w<CR>
+imap kjkj <Esc>:w<CR>
 "highlight trailing whitespace
 match ErrorMsg '\s\+$'
 "bind \-rtw to remove trailing whitespace
