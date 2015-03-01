@@ -7,8 +7,8 @@ function parse_git_branch {
 }
 
 alias asdf='git status'
-alias qwer='git branch -a'
 alias ls='ls -la --color'
+alias qwer='git branch -a'
 
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
@@ -21,3 +21,7 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   ssh-add ~/.ssh/id_rsa.hedley
 fi
 
+PATH=$PATH:$HOME/src/tmux
+
+# Extra stuff that doesn't need to be committed with dotfiles
+source "$HOME/.bashrc_extra"
