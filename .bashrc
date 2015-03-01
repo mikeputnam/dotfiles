@@ -8,6 +8,7 @@ function parse_git_branch {
 
 alias asdf='git status'
 alias ls='ls -la --color'
+alias psnet='sudo lsof -n -P -i +c 15'
 alias qwer='git branch -a'
 
 export CLICOLOR=1
