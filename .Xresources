@@ -6,10 +6,10 @@ XTerm*locale: true
 XTerm*loginShell: true
 XTerm*maximized: true
 XTerm*metaSendsEscape: true
-!XTerm*reverseVideo: true
-XTerm*saveLines: 2000
+XTerm*saveLines: 9000
 XTerm*scrollBar: false
 XTerm*termName: xterm
+XTerm*trimSelection: true
 XTerm*utf8: true
 XTerm*utf8Title: true
 XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
