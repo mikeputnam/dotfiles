@@ -8,7 +8,6 @@ autocmd vimrc BufReadPost *.ts set syntax=javascript
 autocmd vimrc Filetype yaml setlocal ts=2 sts=2 sw=2
 
 let g:netrw_liststyle=3
-let g:neocomplete#enable_at_startup = 1
 set autoindent
 set backspace=2
 set clipboard=unnamedplus
@@ -41,16 +40,10 @@ filetype plugin on
 map <F4> :set norelativenumber!<bar>set relativenumber?<CR>
 map <F5> :set nonumber!<bar>set number?<CR>
 map <F6> :set paste!<bar>set nopaste?<CR>
-"write-make-run This evaluates to the basename of the current file --> %:t:r
-map <F7> <Esc>:w<bar>!clear;echo compiling...;make clean;make;echo running...;./%:t:r<CR>
-imap <F7> <Esc>:w<bar>!clear;echo compiling...;make clean;make;echo running...;./%:t:r<CR>
+map  <F7> <Esc>:w<bar>!clear;make clean;make<CR>
+imap <F7> <Esc>:w<bar>!clear;make clean;make<CR>
 map <Insert> <RightMouse>
-imap kj <Esc>
-map kjkj <Esc>:w<CR>
-imap kjkj <Esc>:w<CR>
 "highlight trailing whitespace
 match ErrorMsg '\s\+$'
 "bind \-rtw to remove trailing whitespace
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
-" Allow saving of files as sudo when I forgot to start vim using sudo.
-cmap w!! w !sudo tee > /dev/null %
