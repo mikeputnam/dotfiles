@@ -21,7 +21,7 @@ set incsearch
 set laststatus=2
 set nocompatible
 set nowrap
-set number
+set relativenumber
 set ruler
 set showmatch
 set shiftwidth=4
@@ -40,8 +40,8 @@ filetype plugin on
 map <F4> :set norelativenumber!<bar>set relativenumber?<CR>
 map <F5> :set nonumber!<bar>set number?<CR>
 map <F6> :set paste!<bar>set nopaste?<CR>
-map  <F7> <Esc>:w<bar>!clear;make clean;make<CR>
-imap <F7> <Esc>:w<bar>!clear;make clean;make<CR>
+map  <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
+imap <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
 map <Insert> <RightMouse>
 "highlight trailing whitespace
 match ErrorMsg '\s\+$'
