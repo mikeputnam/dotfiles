@@ -1,3 +1,7 @@
+[color]
+    ui = auto
+    editor = vim
+    excludesfile = ~/.gitignore
 [diff]
     tool = vimdiff
 [push]
@@ -7,5 +11,10 @@
     name = Mike Putnam
     email = mike@theputnams.net
 [core]
-    editor = vim
-    excludesfile = ~/.gitignore
+	editor = vim
+	excludesfile = ~/.gitignore
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
