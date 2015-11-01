@@ -1,5 +1,11 @@
+XTerm*VT100.renderFont: false
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
 XTerm*bellIsUrgent: true
 XTerm*charClass: 33:48,35-39:48,42-43:48,45-47:48,58:48,61:48,63-64:48,126:48
+XTerm*cursorBlink: on
+XTerm*cursorColor: WhiteXTerm*utf8Title: true
+XTerm*cursorOffTime: 250
+XTerm*cursorOnTime: 400
 XTerm*faceName: DejaVu Sans Mono
 XTerm*faceSize: 10
 XTerm*locale: true
@@ -11,5 +17,3 @@ XTerm*scrollBar: false
 XTerm*termName: xterm
 XTerm*trimSelection: true
 XTerm*utf8: true
-XTerm*utf8Title: true
-XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)

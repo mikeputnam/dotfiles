@@ -11,7 +11,6 @@ let g:netrw_liststyle=3
 set autoindent
 set backspace=2
 set clipboard=unnamedplus
-set cursorline
 set encoding=utf-8
 set expandtab
 set history=1000
