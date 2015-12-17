@@ -5,6 +5,8 @@ augroup END
 
 autocmd vimrc BufReadPost *.app set syntax=python
 autocmd vimrc BufReadPost *.ts set syntax=javascript
+autocmd vimrc Filetype python map <F7> <Esc>:w<bar>vnew<bar>0read ! python #<CR>
+autocmd vimrc Filetype sh map <F7> <Esc>:w<bar>vnew<bar>0read ! sh #<CR>
 autocmd vimrc Filetype yaml setlocal ts=2 sts=2 sw=2
 
 let g:netrw_liststyle=3
@@ -26,6 +28,7 @@ set showmatch
 set shiftwidth=4
 set showcmd
 set softtabstop=4
+set splitright
 set tabstop=4
 syntax on
 colorscheme darkblue
