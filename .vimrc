@@ -22,7 +22,7 @@ set incsearch
 set laststatus=2
 set nocompatible
 set nowrap
-set relativenumber
+set number
 set ruler
 set showmatch
 set shiftwidth=4
