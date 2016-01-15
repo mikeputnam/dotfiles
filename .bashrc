@@ -10,6 +10,7 @@ alias asdf='git status'
 alias ls='ls -la --color'
 alias psnet='sudo lsof -n -P -i +c 15'
 alias qwer='git branch -a'
+alias shrug='echo '\''¯\_(ツ)_/¯'\'' | xclip -selection clipboard'
 alias sw='while true; do echo -ne "\r`date +%H:%M:%S:%N`"; done'
 
 export ANSIBLE_NOCOWS=1
