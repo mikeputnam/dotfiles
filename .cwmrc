@@ -1,6 +1,6 @@
 #bind M-Return unbind
 
-bind Print "/usr/bin/scrot -u /home/mike/output.png"
+bind Print "DISPLAY=:0 import -window root /home/mike/screenshot_$(date "+%Y-%m-%d_%H%M_%S").png"
 
 bind M-h unbind
 bind M-j unbind
