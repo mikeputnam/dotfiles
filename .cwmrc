@@ -1,6 +1,6 @@
 #bind M-Return unbind
 
-bind Print "DISPLAY=:0 import -window root /home/mike/screenshot_$(date "+%Y-%m-%d_%H%M_%S").png"
+bind Print "import -window root /home/mike/screenshot.png"
 
 bind M-h unbind
 bind M-j unbind
