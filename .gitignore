@@ -3,3 +3,8 @@
 .project
 .settings/
 *.php~
+.DS_Store
+._.DS_Store
+*.pyc
+*.swp
+tags
