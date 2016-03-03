@@ -14,6 +14,7 @@ function parse_git_branch {
 }
 
 alias asdf='git status'
+alias less='less -R'
 alias ls='ls -la'
 alias qwer='git branch -a'
 alias sw='while true; do echo -ne "\r`date +%H:%M:%S`"; done'
