@@ -18,7 +18,6 @@ alias sw='while true; do echo -ne "\r`date +%H:%M:%S`"; done'
 
 export ANSIBLE_NOCOWS=1
 export CLICOLOR=1
-export GREP_OPTIONS='--color=auto'
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export PS1='\u@\h \[\033[1;33m\]\W\[\033[0m\]$(parse_git_branch)\$ '
