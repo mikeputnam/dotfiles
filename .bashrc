@@ -1,6 +1,3 @@
-# Extra stuff that doesn't need to be committed with dotfiles
-source "$HOME/.bashrc_extra"
-
 # WHERE POSSIBLE:
 # Changes made to .kshrc  should be mirrored in .bashrc.
 # Changes made to .bashrc should be mirrored in .kshrc.
@@ -25,3 +22,6 @@ export GREP_OPTIONS='--color=auto'
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export PS1='\u@\h \[\033[1;33m\]\W\[\033[0m\]$(parse_git_branch)\$ '
+
+# Extra stuff that doesn't need to be committed with dotfiles
+. $HOME/.bashrc_extra
