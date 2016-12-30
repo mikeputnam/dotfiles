@@ -44,6 +44,7 @@ map <F5> :set nonumber!<bar>set number?<CR>
 map <F6> :set paste!<bar>set nopaste?<CR>
 map  <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
 imap <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
+map <F8> :silent !make<CR>
 map <Insert> <RightMouse>
 "highlight trailing whitespace
 match ErrorMsg '\s\+$'
