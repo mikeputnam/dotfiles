@@ -7,7 +7,7 @@ XTerm*cursorColor: WhiteXTerm*utf8Title: true
 XTerm*cursorOffTime: 250
 XTerm*cursorOnTime: 400
 XTerm*faceName: DejaVu Sans Mono
-XTerm*faceSize: 10
+XTerm*faceSize: 24
 XTerm*locale: true
 XTerm*loginShell: true
 XTerm*maximized: true
