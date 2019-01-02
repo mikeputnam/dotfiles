@@ -12,6 +12,7 @@ XTerm*locale: true
 XTerm*loginShell: true
 XTerm*maximized: true
 XTerm*metaSendsEscape: true
+XTerm*reverseVideo: false
 XTerm*saveLines: 9000
 XTerm*scrollBar: false
 XTerm*termName: xterm
