@@ -23,8 +23,8 @@ function man() {
 
 export ANSIBLE_NOCOWS=1
 export CLICOLOR=1
-export HISTSIZE=10000
-export HISTFILESIZE=10000
+export HISTSIZE=100000
+export HISTFILESIZE=100000
 export PS1='\u@\h \[\033[1;33m\]\W\[\033[0m\]$(parse_git_branch)\$ '
 export SRC=$HOME/src
 
