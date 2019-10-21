@@ -30,8 +30,8 @@ export SRC=$HOME/src
 
 alias asdf='git status'
 alias less='less -R'
-alias ls='/bin/ls -la --color=auto'
-alias ll='/bin/ls -l --color=auto'
+alias ls='/bin/ls -la'
+alias ll='/bin/ls -l'
 alias qwer='git branch -v'
 alias sw='while true; do echo -ne "\r`date +%H:%M:%S`"; done'
 alias zxcv='for D in $(find $SRC -maxdepth 1 -mindepth 1 -type d); do if [ -d $D/.git ]; then echo $D && cd $D && git fetch && git status && cd ..; fi ; done'
