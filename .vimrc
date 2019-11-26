@@ -39,12 +39,18 @@ highlight DiffChange cterm=none ctermfg=bg ctermbg=Yellow gui=none guifg=bg guib
 highlight DiffText cterm=none ctermfg=bg ctermbg=Magenta gui=none guifg=bg guibg=Magenta
 highlight Normal guibg=lightyellow
 filetype plugin on
-map <F4> :set norelativenumber!<bar>set relativenumber?<CR>
-map <F5> :set nonumber!<bar>set number?<CR>
-map <F6> :set paste!<bar>set nopaste?<CR>
-map  <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
-imap <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
-map <F8> :silent !make<CR>
+nnoremap  <F4> :set norelativenumber!<bar>set relativenumber?<CR>
+inoremap  <F4> :set norelativenumber!<bar>set relativenumber?<CR>
+nnoremap  <F5> :set nonumber!<bar>set number?<CR>
+inoremap  <F5> :set nonumber!<bar>set number?<CR>
+nnoremap  <F6> :set paste!<bar>set nopaste?<CR>
+inoremap  <F6> :set paste!<bar>set nopaste?<CR>
+nnoremap <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
+inoremap <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
+nnoremap <F8> :silent !make<CR>
+inoremap <F8> :silent !make<CR>
+nnoremap <F9> "=strftime("%FT%T%z")<CR>P
+inoremap <F9> <C-R>=strftime("%FT%T%z")<CR>
 map <Insert> <RightMouse>
 "highlight trailing whitespace
 match ErrorMsg '\s\+$'
