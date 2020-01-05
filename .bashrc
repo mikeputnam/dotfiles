@@ -21,10 +21,14 @@ function man() {
     command man "$@"
 }
 
+# append to the history file, don't overwrite it
+shopt -s histappend
+
 export ANSIBLE_NOCOWS=1
 export CLICOLOR=1
-export HISTSIZE=100000
+export HISTCONTROL=ignoreboth
 export HISTFILESIZE=100000
+export HISTSIZE=100000
 export PS1='\u@\h \[\033[1;33m\]\W\[\033[0m\]$(parse_git_branch)\$ '
 export SRC=$HOME/src
 
@@ -33,7 +37,6 @@ alias less='less -R'
 alias ls='/bin/ls -la'
 alias ll='/bin/ls -l'
 alias qwer='git branch -v'
-alias sw='while true; do echo -ne "\r`date +%H:%M:%S`"; done'
 alias zxcv='for D in $(find $SRC -maxdepth 1 -mindepth 1 -type d); do if [ -d $D/.git ]; then echo $D && cd $D && git fetch && git status && cd ..; fi ; done'
 
 # Extra stuff that doesn't need to be committed with dotfiles
