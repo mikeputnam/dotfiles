@@ -37,7 +37,6 @@ alias less='less -R'
 alias ls='/bin/ls -la'
 alias ll='/bin/ls -l'
 alias qwer='git branch -v'
-alias zxcv='for D in $(find $SRC -maxdepth 1 -mindepth 1 -type d); do if [ -d $D/.git ]; then echo $D && cd $D && git fetch && git status && cd ..; fi ; done'
 
 # Extra stuff that doesn't need to be committed with dotfiles
 . $HOME/.bashrc_extra
