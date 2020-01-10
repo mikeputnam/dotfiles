@@ -33,6 +33,7 @@ export PS1='\u@\h \[\033[1;33m\]\W\[\033[0m\]$(parse_git_branch)\$ '
 export SRC=$HOME/src
 
 alias asdf='git status'
+alias dt='date +%Y-%m-%d_%H%M%S'
 alias less='less -R'
 alias ls='/bin/ls -la'
 alias ll='/bin/ls -l'
