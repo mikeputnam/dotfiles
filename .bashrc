@@ -10,6 +10,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
 }
 
+# color for man page sections
 function man() {
     LESS_TERMCAP_mb=$'\e'"[1;31m" \
     LESS_TERMCAP_md=$'\e'"[1;31m" \
@@ -36,8 +37,8 @@ alias asdf='git status'
 alias dt='date +%Y-%m-%d_%H%M%S'
 alias less='less -R'
 alias ls='/bin/ls -la'
-alias ll='/bin/ls -l'
 alias qwer='git branch -v'
 
-# Extra stuff that doesn't need to be committed with dotfiles
+# extra stuff that doesn't need to be committed with dotfiles
+touch $HOME/.bashrc_extra
 . $HOME/.bashrc_extra
