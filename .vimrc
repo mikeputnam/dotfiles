@@ -7,12 +7,13 @@ autocmd vimrc BufReadPost *.app set syntax=python
 autocmd vimrc BufReadPost *.ts set syntax=javascript
 autocmd vimrc Filetype python map <F7> <Esc>:w<bar>vnew<bar>0read ! python #<CR>
 autocmd vimrc Filetype sh map <F7> <Esc>:w<bar>vnew<bar>0read ! sh #<CR>
+autocmd vimrc Filetype javascript map <F7> <Esc>:w<bar>vnew<bar>0read ! node #<CR>
 autocmd vimrc Filetype yaml setlocal ts=2 sts=2 sw=2
 
 let g:netrw_liststyle=3
 set autoindent
 set backspace=2
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 set encoding=utf-8
 set expandtab
 set history=1000
