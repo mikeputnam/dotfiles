@@ -16,6 +16,7 @@ set backspace=2
 "set clipboard=unnamedplus
 set encoding=utf-8
 set expandtab
+set nofixeol
 set history=1000
 set hlsearch
 set ignorecase
