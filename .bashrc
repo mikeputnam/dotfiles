@@ -37,7 +37,7 @@ alias asdf='git status'
 alias dt='date +%Y-%m-%d_%H%M%S'
 alias less='less -R'
 alias ls='/bin/ls -la'
-alias passgen='head /dev/urandom | tr -dc A-Za-z0-9\!\@\#\$\%\^\&\*\(\)\-\+\=\,\.\?  | head -c 35 ; echo ""'
+alias passgen='head /dev/urandom | tr -dc A-Za-z0-9 | head -c 35 ; echo ""'
 alias qwer='git branch -v'
 
 # extra stuff that doesn't need to be committed with dotfiles
