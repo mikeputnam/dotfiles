@@ -28,8 +28,8 @@ shopt -s histappend
 export ANSIBLE_NOCOWS=1
 export CLICOLOR=1
 export HISTCONTROL=ignoreboth
-export HISTFILESIZE=100000
-export HISTSIZE=100000
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
 export PS1='\u@\h \[\033[1;33m\]\W\[\033[0m\]$(parse_git_branch)\$ '
 export SRC=$HOME/src
 
