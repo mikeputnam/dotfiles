@@ -39,6 +39,7 @@ alias less='less -R'
 alias ls='/bin/ls -la'
 alias passgen='head /dev/urandom | tr -dc A-Za-z0-9\!\$\? | head -c 35 ; echo ""'
 alias passgen-an='head /dev/urandom | tr -dc A-Za-z0-9 | head -c 35 ; echo ""'
+alias passgen-py='python -c  "import uuid;print(uuid.uuid4())"'
 alias qwer='git branch -v'
 
 # extra stuff that doesn't need to be committed with dotfiles
