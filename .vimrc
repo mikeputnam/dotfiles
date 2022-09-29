@@ -5,7 +5,7 @@ augroup END
 
 autocmd vimrc BufReadPost *.app set syntax=python
 autocmd vimrc BufReadPost *.ts set syntax=javascript
-autocmd vimrc Filetype python map <F7> <Esc>:w<bar>vnew<bar>0read ! python #<CR>
+autocmd vimrc Filetype python map <F7> <Esc>:w<bar>vnew<bar>0read ! python3 #<CR>
 autocmd vimrc Filetype sh map <F7> <Esc>:w<bar>vnew<bar>0read ! sh #<CR>
 autocmd vimrc Filetype javascript map <F7> <Esc>:w<bar>vnew<bar>0read ! node #<CR>
 autocmd vimrc Filetype yaml setlocal ts=2 sts=2 sw=2
@@ -47,8 +47,8 @@ nnoremap  <F5> :set nonumber!<bar>set number?<CR>
 inoremap  <F5> :set nonumber!<bar>set number?<CR>
 nnoremap  <F6> :set paste!<bar>set nopaste?<CR>
 inoremap  <F6> :set paste!<bar>set nopaste?<CR>
-nnoremap <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
-inoremap <F7> <Esc>:w<bar>!clear;make clean;make;./%:r<CR>
+nnoremap <F7> <Esc>:w<bar>make;./%:r<CR>
+inoremap <F7> <Esc>:w<bar>make;./%:r<CR>
 nnoremap <F8> :silent !make<CR>
 inoremap <F8> :silent !make<CR>
 nnoremap <F9> "=strftime("%FT%T%z")<CR>P

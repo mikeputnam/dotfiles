@@ -46,3 +46,4 @@ alias qwer='git branch -v'
 # extra stuff that doesn't need to be committed with dotfiles
 touch $HOME/.bashrc_extra
 . $HOME/.bashrc_extra
+
