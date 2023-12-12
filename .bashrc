@@ -36,7 +36,7 @@ export SRC=$HOME/src
 alias asdf='git status'
 alias dt='date +%Y-%m-%d_%H%M%S'
 alias less='less -R'
-alias ls='/bin/ls -la'
+alias ls='/bin/ls -la --color=auto'
 alias passgen='head /dev/urandom | tr -dc A-Za-z0-9\!\$\? | head -c 35 ; echo ""'
 alias passgen-a='head /dev/urandom | tr -dc a-z | head -c 35 ; echo ""'
 alias passgen-an='head /dev/urandom | tr -dc A-Za-z0-9 | head -c 35 ; echo ""'
